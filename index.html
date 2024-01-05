@@ -6,49 +6,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
 
+
+
 </head>
 
 <body>
-    <h1>JavaScript Arithmetic Operators</h1>
+    <h1>Do/While Loop</h1>
+    <script>
 
+        var a = 1
+        do {
+            document.write(a + " lorem ipsum <br>");
+            a++;
+        }
+        while (a <= 10)
 
-    <h1>JavaScript Assignment Operators</h1>
+    </script>
+    <h1>For Loop</h1>
+    <script>
+        for (var a = 1; a <= 10; a++) {
+            document.write("Hello Areeb <br>")
+        }
+    </script>
+    <h1> Break & Continue Statement </h1>
+    <script>
+        for (var a = 1; a <= 10; a++) {
+            if (a == 3) {
+                document.write("Hey :" + a + "<br>");
+                break;
+            }
+            document.write("Number :" + a + "<br>")
+        }
+    </script>
+    <h1>Find Even & Odd Numbers </h1>
+    <script>
 
+        for (var a = 1; a <= 10; a++) {
+            if (a % 2 != 0) {
+                document.write(a + "<br>")
+            }
 
-    <h1 id="main">JavaScript with Google Chrome Console</h1>
+        }
 
+        for (var a = 1; a <= 10; a++) {
+            if (a % 2 == 0) {
+                document.write(a + "<br>")
+            }
 
-    <h1>JavaScript Comparison Operators</h1>
+        }
+    </script>
+    <h1> Nested Loop</h1>
+    <script>
+        for (var a = 1; a <= 100; a = a + 10) {
+            for (var b = a; b < a + 10; b++) {
+                document.write(b + "      ")
+            }
+            document.write("<br>")
+        }
+    </script>
+    <h1>JavaScript Arrays</h1>
+    <script>
+        var ary = [10, "Sajid", "Ali", true, undefined];
+        document.write("<ul>");
+        for (var a = 0; a < 5; a++) {
+            document.write("<li>" + ary[a] + "</li>")
+        }
+        document.write("</ul");
+    </script>
 
+    <h1>Modify &  Delete Array Elements</h1>
+    <br><br>
 
-    <h1>JavaScript If Else Statement </h1>
+    <script>
+        var a = ["Areeb", 18, "Male", "BCA"];
+        document.write(a + "<br>");
+        a[0] = "Abid";
+        document.write(a + "<br>");
+        a[1] = 22;
+        document.write(a + "<br>");
+    </script>
 
-    <h1>JavaScript Logical Operators</h1>
+    <h1>JavaScript Array Sort & Reverse </h1>
+    <script>
+        var a=["Areeb","Rehman","Rohaan","Yasir","Amaan","Umar","Affnan"];
+        document.write(a+ "<br><br>");
+        a.sort();
+        document.write(a+"<br><br>");
+        a.reverse();
+        document.write(a+"<br><br>");
+    </script>
 
+    <h1>JavaScript Array Pop & Push </h1>
+    <script>
+  var a=["Areeb","Rehman","Rohaan",];
+        document.write(a+ "<br><br>");
+        a.pop();
+        document.write(a+ "<br><br>");
+        a.push("Salman");
+        document.write(a+ "<br><br>");
+        a.push("Ahmed");
+        document.write(a+ "<br><br>");
+    </script>
 
-    <h1>JavaScript If Else If</h1>
+    <h1>JavaScript Array Shift & Unshift</h1>
+    <script>
+         var a=["Areeb","Rehman","Rohaan",];
+        document.write(a+ "<br><br>");
+        a.shift();
+        document.write(a+ "<br><br>");
+        a.unshift("Salman");
+        document.write(a+ "<br><br>");
+        a.unshift("Ahmed");
+        document.write(a+ "<br><br>");
+    </script>
 
+    <h1>JavaScript Array Concat & Join</h1>
+    <script>
+         var a=["Areeb","Rehman","Rohaan",];
+         var b=["Yasir","Amaan","Umar"];
+         var c=["Hira","Maheen"];
+         var d=a.concat(b,c);
+         document.write(d);
 
-    <h1>JavaScript Conditional Ternary Operator </h1>
+         var a=["Areeb","Rehman","Rohaan",];
+         var b=["Yasir","Amaan"," "];
+         var c=a.concat(b);
+         document.write(c+ "<br><br>");
+         var d=c.join("$ <br>");
+         document.write(d);
+    </script>
 
+<h1>JavaScript Array Slice & Splice</h1>
+<script>
+      var a=["Areeb","Rehman","Rohaan","Yasir","Amaan","Umar","Affnan"];
+     document.write(a+ "<br><br>");
+     var b=a.slice(-4,-1);
+     document.write(b+ "<br><br>");
+     var a=["Areeb","Rehman","Rohaan",];
+     document.write(a+ "<br><br>");
+     a.splice(2,0,"Hira","Maheen");
+     document.write(a+ "<br><br>");
+</script>
+<h1>JavaScript isArray </h1>
+<script>
+    var a=20;
+    var b=["Areeb","Rehman","Rohaan",];
+    document.write( "<br><br>");
+    if (Array.isArray(-b,-a)) {
+      
+        console.log("This is an Array")
+    } else {
+        console.log("This is not an Array")
+    }
+</script>
 
-    <h1>JavaScript Switch Case</h1>
+<h1>JavaScript Array indexOf & lastIndexOf</h1>
+<script>
+     var a=["Areeb","Rehman","Rohaan","Rehman",];
+     document.write(a+ "<br><br>");
+     var b=a.indexOf("Rehman",2);
+     document.write(b+ "<br><br>");
+     var c=a.lastIndexOf("Rehman",2);
+     document.write(c+ "<br><br>");
+</script>
 
-
-    <h1>JavaScript Alert Box </h1>
-
-
-    <h1>JavaScript Confirm Box </h1>
-
-    <h1>JavaScript Prompt Box</h1>
-
-    <h1>JavaScript Functions </h1>
-    <h1>Hello</h1>
-    <h1>Javascript implementation</h1>
-    <h1>Add Html Tags in JavaScript</h1>
-
-    <script src="./Js/script.js"></script>
-
-
+<h1>JavaScript Array Includes Method </h1>
+<script>
+      var a=["Areeb","Rehman","Rohaan",];
+      document.write(a+ "<br><br>");
+      var b=a.includes("Rohaan");
+      document.write(b+ "<br><br>");
+</script>
 </body>
+
 </html>
